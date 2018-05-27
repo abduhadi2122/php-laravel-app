@@ -3,15 +3,15 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-9 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    
-                    <a href="/posts/create" class ="btn btn-primary">Create Post</a>
-                    <h3>Yoour Blog Posts</h3>
-
+                    <br>
+                    <h3 style="display: inline">Your uploaded Notes</h3> 
+                    <a href="/posts/create" class ="btn btn-primary pull-right">Add Notes</a>
+                    <br><br><br>
                     @if(count($posts)>0)
                         <table class="table table-striped">
                             <tr>

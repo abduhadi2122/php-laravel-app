@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="jumbotron text-center">
-        <h1>Welcome To Laravel!</h1>
-        <p>This is the laravel application from the "Laravel From Scratch" YouTube series</p>
+        <h2>Welcome To Easy Notes!</h2>
+        <p>Here you can share your class notes with your friends easy and pain free.</p>
         <p>
             <a class="btn btn-primary btn-lg" href="/login" role="button">Login</a> 
             <a class="btn btn-success btn-lg" href="/register" role="button">Register</a>

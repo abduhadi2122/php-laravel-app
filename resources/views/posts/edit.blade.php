@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="/posts" class="btn btn-default">Go Back</a>
-    <h1>Edit Post<h1>
+<!--<a href="/posts" class="btn btn-default">Back</a> 
+    <br> -->
+    <h2>Edit Notes</h2>
+        <br>
         {!! Form::open(['action'=> ['PostsController@update', $post->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
             <div class="form-group">
                 {{Form::label('title', 'Title')}}
@@ -12,9 +14,11 @@
                     {{Form::label('body', 'Body')}}
                     {{Form::textarea('body', $post->body, ['id'=> 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body Text'])}}
             </div>
+            <br>
             <div class="form-group">
-                    {{Form::file('cover_image')}}
+                    {{Form::file('attached_file')}}
             </div>
+            <br>
             {{Form::hidden('_method', 'PUT')}}
             {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
         {!! Form::close() !!}
